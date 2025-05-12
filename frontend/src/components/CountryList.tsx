@@ -27,7 +27,7 @@ export default function CountryList() {
           <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer h-full">
             <CardContent className="p-4">
               <div className="flex items-center gap-4">
-                <div className="text-4xl emoji">{country.emoji}</div>
+                <p className="text-4xl emoji">{country.emoji}</p>
                 <div className="font-medium">{country.name}</div>
               </div>
             </CardContent>

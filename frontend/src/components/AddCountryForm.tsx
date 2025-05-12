@@ -26,7 +26,6 @@ export default function AddCountryForm() {
     continentId: "",
   })
 
-  // Récupérer la liste des continents
   const { loading: continentsLoading, error: continentsError, data: continentsData } = useQuery(GET_CONTINENTS)
 
   const [addCountry, { loading, error }] = useMutation(CREATE_NEW_COUNTRY, {
@@ -107,7 +106,6 @@ export default function AddCountryForm() {
             />
           </div>
 
-          {/* Nouveau select pour le continent */}
           <div className="space-y-2">
             <Label htmlFor="continentId">Continent</Label>
             {continentsLoading ? (
